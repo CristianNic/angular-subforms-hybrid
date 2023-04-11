@@ -1,4 +1,4 @@
-# Angular Subforms,
+# Angular Subforms
 
 This demo addresses a very specific need: To add FormGroup components to a parent FormGroup while retaining the layout of the orignal form.
 
