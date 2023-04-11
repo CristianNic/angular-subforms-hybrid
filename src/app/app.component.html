@@ -1,0 +1,51 @@
+<div class="container">
+  <h1>Handling large, typed reactive forms in Angular</h1>
+  <!-- <h3><span class="italic">Hybrid Approach.</span> 
+    Parent has form and Child Component forms</h3>
+  <p>
+    The following form is split into three parts. 
+    The older customer-form version retains the layout in the
+    <span data-ref="name-parent-form">full name section</span> 
+    in the parent with two new child components attached: 
+    the <span data-ref="address-info-subform">address-info-subform</span>
+    and the <span data-ref="order-details-subform">order-details-subform</span>. 
+  </p> -->
+  <h3><span class="italic">Hybrid Approach</span></h3>
+  <p>
+    This demo addresses a very specific need: To add FormGroup components to 
+    a parent FormGroup while retaining the layout of the orignal form.
+  </p>
+  <p>
+    The goal is to add modular sections to an existing form without having 
+    to rewrite the existing form into components.
+  </p>
+  <p> The original parent form with the 
+    <span data-ref="name-parent-form">full name section</span>
+    now has two new child components attached: the
+    <span data-ref="address-info-subform">address-info-subform</span> and the 
+    <span data-ref="order-details-subform">order-details-subform</span>.
+  </p>
+  <app-customer-form-page></app-customer-form-page>
+</div>
+<!-- 
+This demo addresses a very specific need: To add a FormGroup to 
+a parent FormGroup while retaining the layout of the parent form. 
+The parent form is a FormGroup with the <span data-ref="name-parent-form">full name section</span>
+with two new child components attached: the 
+<span data-ref="address-info-subform">address-info-subform</span> and the 
+<span data-ref="order-details-subform">order-details-subform</span>.
+
+
+The customerForm is a FormGroup (https://angular.io/api/forms/FormGroup) with the
+<span data-ref="name-parent-form">full name section</span> with 
+
+two new child components attached: 
+    the <span data-ref="address-info-subform">address-info-subform</span>
+    and the <span data-ref="order-details-subform">order-details-subform</span>. 
+
+    this.customerForm = this.fb.group({
+      firstName: ['', [Validators.required]],
+      lastName: ['', [Validators.required]],
+      address: this.addressForm.createFormGroup(),
+      orderDetails: this.orderDetailsForm.createFormGroup() -->
+
